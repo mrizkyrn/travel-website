@@ -6,105 +6,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Adventures</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 
 <body>
   <header>
     <div class="container">
-      <h1>Travel Adventures</h1>
+      <p>Travel Adventures</p>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#destinations">Destinations</a></li>
-          <li><a href="#tips">Travel Tips</a></li>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="close-btn" aria-lable="Close navigation menu">&times;</div>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Explore the <span>World</span> with Us</h1>
-      <p>Discover breathtaking destinations, immerse yourself in diverse cultures, and embark on unforgettable adventures. Let us be your guide to the most beautiful places on
-        Earth.</p>
-      <a href="#destinations" class="btn">Explore Destinations</a>
-    </div>
-  </section>
-
   <main>
-    <div class="container">
-      <div class="content">
-        <article>
-          <h1><span>Exploring</span> the Wonders of the World</h1>
-          <p>Discover the most beautiful places on Earth. From breathtaking landscapes to vibrant cities, join us as we explore amazing travel destinations around the globe.</p>
-          <p>Whether you're looking for adventure, relaxation, or cultural experiences, our travel guides will help you plan the perfect trip.</p>
-          <h2>Top Destinations to Visit</h2>
-          <ul>
-            <li><strong>Paris, France:</strong> Experience the charm of the City of Light, from the Eiffel Tower to the Louvre.</li>
-            <li><strong>Kyoto, Japan:</strong> Immerse yourself in the rich cultural heritage and stunning temples of Kyoto.</li>
-            <li><strong>New York City, USA:</strong> Discover the hustle and bustle of the Big Apple, with its iconic landmarks and diverse neighborhoods.</li>
-            <li><strong>Cape Town, South Africa:</strong> Enjoy breathtaking views from Table Mountain and explore the vibrant waterfront.</li>
-            <li><strong>Sydney, Australia:</strong> Relax on beautiful beaches and visit the iconic Sydney Opera House.</li>
-          </ul>
-        </article>
-
-        <article>
-          <h2>Travel Tips for Every Journey</h2>
-          <p>Traveling can be a wonderful experience, but preparation is key. Here are some essential tips to make your travels smoother and more enjoyable:</p>
-          <ul>
-            <li>Research your destination thoroughly before you go.</li>
-            <li>Pack light and smart, focusing on essentials.</li>
-            <li>Keep important documents and valuables safe.</li>
-            <li>Stay open-minded and respectful of local cultures.</li>
-            <li>Always have a backup plan for emergencies.</li>
-          </ul>
-        </article>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Explore the <span>World</span> with Us</h1>
+        <p>Discover breathtaking destinations, immerse yourself in diverse cultures, and embark on unforgettable adventures. Let us be your guide to the most beautiful places on
+          Earth.</p>
+        <a href="#articles" class="btn">Explore Destinations</a>
       </div>
+    </section>
 
-      <aside>
-        <h2>Featured Destination</h2>
-        <img src="img/bali.jpg" alt="Beautiful destination view">
-        <p>Discover the serene beaches and vibrant culture of Bali, Indonesia. Whether you're looking to relax by the ocean or explore local markets, Bali offers a perfect blend of
-          adventure and tranquility.</p>
-        <h3>Travel Tips</h3>
-        <p>Here are some useful tips to make your travel experience smoother and more enjoyable:</p>
-        <ul>
-          <li><a href="#packing">Packing Essentials</a></li>
-          <li><a href="#budgeting">Budgeting for Your Trip</a></li>
-          <li><a href="#safety">Travel Safety Advice</a></li>
-        </ul>
-      </aside>
-    </div>
-  </main>
-
-  <section id="contact">
-    <div class="container">
-      <div class="contact-info">
-        <h2>Get in Touch</h2>
-        <p>Ready to start your next adventure? Contact us today to learn more about our travel packages, get expert advice, or book your next trip.</p>
-        <ul>
-          <li><strong>Phone:</strong> 1-800-123-4567</li>
-          <li><strong>Email:</strong> traveladventures@example.com</li>
-          <li><strong>Address:</strong> 123 Main Street, New York, NY 10001</li>
-        </ul>
+    <section id="articles">
+      <div class="container">
+        <div class="content">
+          <article>
+            <h2><span>Exploring</span> the Wonders of the World</h2>
+            <p>Discover the most beautiful places on Earth. From breathtaking landscapes to vibrant cities, join us as we explore amazing travel destinations around the globe.</p>
+            <p>Whether you're looking for adventure, relaxation, or cultural experiences, our travel guides will help you plan the perfect trip.</p>
+            <h3>Top Destinations to Visit</h3>
+            <ul>
+              <li><strong>Paris, France:</strong> Experience the charm of the City of Light, from the Eiffel Tower to the Louvre.</li>
+              <li><strong>Kyoto, Japan:</strong> Immerse yourself in the rich cultural heritage and stunning temples of Kyoto.</li>
+              <li><strong>New York City, USA:</strong> Discover the hustle and bustle of the Big Apple, with its iconic landmarks and diverse neighborhoods.</li>
+              <li><strong>Cape Town, South Africa:</strong> Enjoy breathtaking views from Table Mountain and explore the vibrant waterfront.</li>
+              <li><strong>Sydney, Australia:</strong> Relax on beautiful beaches and visit the iconic Sydney Opera House.</li>
+            </ul>
+          </article>
+  
+          <article>
+            <h2>Travel Tips for Every Journey</h2>
+            <p>Traveling can be a wonderful experience, but preparation is key. Here are some essential tips to make your travels smoother and more enjoyable:</p>
+            <ul>
+              <li>Research your destination thoroughly before you go.</li>
+              <li>Pack light and smart, focusing on essentials.</li>
+              <li>Keep important documents and valuables safe.</li>
+              <li>Stay open-minded and respectful of local cultures.</li>
+              <li>Always have a backup plan for emergencies.</li>
+            </ul>
+          </article>
+        </div>
+  
+        <aside>
+          <h2>Featured Destination</h2>
+          <img src="img/bali.jpg" alt="Beautiful destination view">
+          <p>Discover the serene beaches and vibrant culture of Bali, Indonesia. Whether you're looking to relax by the ocean or explore local markets, Bali offers a perfect blend of
+            adventure and tranquility.</p>
+          <h3>Travel Tips</h3>
+          <p>Here are some useful tips to make your travel experience smoother and more enjoyable:</p>
+          <ul>
+            <li><a href="#packing">Packing Essentials</a></li>
+            <li><a href="#budgeting">Budgeting for Your Trip</a></li>
+            <li><a href="#safety">Travel Safety Advice</a></li>
+          </ul>
+        </aside>
       </div>
+    </section>
 
-      <div class="contact-content">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, suggestions, or just want to say hello, feel free to contact us. We'd love to hear from you!</p>
-        <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
+    <section id="contact">
+      <div class="container">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>Ready to start your next adventure? Contact us today to learn more about our travel packages, get expert advice, or book your next trip.</p>
+          <ul>
+            <li><strong>Phone:</strong> 1-800-123-4567</li>
+            <li><strong>Email:</strong> traveladventures@example.com</li>
+            <li><strong>Address:</strong> 123 Main Street, New York, NY 10001</li>
+          </ul>
+        </div>
+  
+        <div class="contact-content">
+          <h2>Contact Us</h2>
+          <p>If you have any questions, suggestions, or just want to say hello, feel free to contact us. We'd love to hear from you!</p>
+          <form id="contact-form" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2024 Travel Adventures. All rights reserved.</p>
